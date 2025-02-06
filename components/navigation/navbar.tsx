@@ -51,31 +51,36 @@ export function Navbar() {
 export function NavMenu({ isSheet = false }) {
   return (
     <>
-      {Navigations.map((item) => {
-        const Comp = (
-          <Anchor
-            key={item.title + item.href}
-            activeClassName="font-bold text-primary"
-            absolute
-            className="flex items-center gap-1 text-sm"
-            href={item.href}
-            target={item.external ? "_blank" : undefined}
-            rel={item.external ? "noopener noreferrer" : undefined}
-          >
-            {item.title}{" "}
-            {item.external && (
-              <LuArrowUpRight className="w-3 h-3 align-super" strokeWidth={3} />
-            )}
-          </Anchor>
-        )
-        return isSheet ? (
-          <SheetClose key={item.title + item.href} asChild>
-            {Comp}
-          </SheetClose>
-        ) : (
-          Comp
-        )
-      })}
+      {Navigations.map(
+        (item: { title: string; href: string; external?: string }) => {
+          const Comp = (
+            <Anchor
+              key={item.title + item.href}
+              activeClassName="font-bold text-primary"
+              absolute
+              className="flex items-center gap-1 text-sm"
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+            >
+              {item.title}{" "}
+              {item.external && (
+                <LuArrowUpRight
+                  className="w-3 h-3 align-super"
+                  strokeWidth={3}
+                />
+              )}
+            </Anchor>
+          )
+          return isSheet ? (
+            <SheetClose key={item.title + item.href} asChild>
+              {Comp}
+            </SheetClose>
+          ) : (
+            Comp
+          )
+        }
+      )}
     </>
   )
 }

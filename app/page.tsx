@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="min-h-[86.5vh] flex flex-col justify-center items-center text-center px-2 py-8">
+    <main className="flex flex-col flex-1 justify-center items-center text-center px-2 py-8">
       <h1 className="text-4xl font-bold mb-4 sm:text-7xl">
         The P.O.W.A. Project
       </h1>
@@ -20,6 +20,6 @@ export default function Home() {
           Get Started
         </Link>
       </div>
-    </div>
+    </main>
   )
 }
