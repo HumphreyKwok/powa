@@ -6,9 +6,9 @@ export default function Documents({
   children: React.ReactNode
 }>) {
   return (
-    <div className="flex items-start gap-14">
+    <div className="flex items-start gap-14 container flex-1">
       <Sidebar />
-      <div className="flex-1 md:flex-[6]">{children}</div>{" "}
+      <div className="flex-1 md:flex-[6]">{children}</div>
     </div>
   )
 }

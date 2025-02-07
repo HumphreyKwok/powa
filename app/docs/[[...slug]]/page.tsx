@@ -4,11 +4,9 @@ import { getDocument } from "@/lib/markdown"
 import { Settings } from "@/lib/meta"
 import { PageRoutes } from "@/lib/pageroutes"
 import { Typography } from "@/components/ui/typography"
-import { BackToTop } from "@/components/navigation/backtotop"
-import Feedback from "@/components/navigation/feedback"
 import PageBreadcrumb from "@/components/navigation/pagebreadcrumb"
+import PageNavigation from "@/components/navigation/pageNavigation"
 import Pagination from "@/components/navigation/pagination"
-import Toc from "@/components/navigation/toc"
 
 type PageProps = {
   params: Promise<{ slug: string[] }>
@@ -36,17 +34,11 @@ export default async function Pages({ params }: PageProps) {
           <Pagination pathname={pathName} />
         </Typography>
       </div>
-      {Settings.rightbar && (
-        <div className="hidden xl:flex xl:flex-col sticky top-16 gap-3 py-8 min-w-[230px] h-[94.5vh] toc">
-          {Settings.toc && <Toc tocs={tocs} />}
-          {Settings.feedback && (
-            <Feedback slug={pathName} title={frontmatter.title} />
-          )}
-          {Settings.totop && (
-            <BackToTop className="mt-6 self-start text-sm text-neutral-800 dark:text-neutral-300/85" />
-          )}
-        </div>
-      )}
+      <PageNavigation
+        tocs={tocs}
+        pathName={pathName}
+        title={frontmatter.title}
+      />
     </div>
   )
 }
@@ -54,12 +46,16 @@ export default async function Pages({ params }: PageProps) {
 export async function generateMetadata({ params }: PageProps) {
   const { slug = [] } = await params
   const pathName = slug.join("/")
-  const res = await getDocument(pathName)
+  let res
+  try {
+    res = await getDocument(pathName)
+  } catch (error) {
+    return null
+  }
 
   if (!res) return null
 
   const { frontmatter, lastUpdated } = res
-
 
   return {
     title: `${frontmatter.title} - ${Settings.title}`,

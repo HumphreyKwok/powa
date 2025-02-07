@@ -23,7 +23,7 @@ export default function SubLink(
   props: Paths & { level: number; isSheet: boolean }
 ) {
   const path = usePathname()
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false) //Changed it to closed by default
 
   useEffect(() => {
     if (
@@ -65,7 +65,7 @@ export default function SubLink(
   return (
     <div className="flex flex-col w-full gap-1">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-        <div className="flex items-center gap-2 text-sm mr-3">
+        <div className="flex items-center gap- text-sm mr-3">
           {titleOrLink}
           <CollapsibleTrigger asChild>
             <Button className="ml-auto h-6 w-6" variant="link" size="icon">

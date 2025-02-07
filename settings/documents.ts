@@ -7,46 +7,114 @@ export const Documents: Paths[] = [
     heading: "Getting started",
     items: [
       {
-        title: "Installation",
+        title: "Prerequisite",
         href: "/installation",
       },
       {
         title: "Setup",
         href: "/setup",
       },
-      {
-        title: "Changelog",
-        href: "/changelog",
-      },
     ],
   },
   {
     spacer: true,
   },
   {
-    title: "Navigation",
-    href: "/navigation",
-    heading: "Documents",
-  },
-  {
-    title: "Structure",
-    href: "/structure",
+    title: "Part I: Storing Data",
+    href: "/cards",
+    heading: "Course Contents",
     items: [
       {
-        title: "Deep",
-        href: "/deep",
-        items: [
-          {
-            title: "Deeper",
-            href: "/deeper",
-            items: [
-              {
-                title: "Even deeper",
-                href: "/even-deeper",
-              },
-            ],
-          },
-        ],
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part II: Modifying Data",
+    href: "/filetrees",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part III: Creating APIs",
+    href: "/lists",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part IV: Encapsulating APIs",
+    href: "/maths",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part V: Authenticating Users",
+    href: "/tabs",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part VI: Testing",
+    href: "/placeholder",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
+      },
+    ],
+  },
+  {
+    title: "Part VII: Deployment",
+    href: "/placeholder2",
+    items: [
+      {
+        title: "Prerequisite",
+        href: "/installation",
+      },
+      {
+        title: "Setup",
+        href: "/setup",
       },
     ],
   },
@@ -54,45 +122,87 @@ export const Documents: Paths[] = [
     spacer: true,
   },
   {
-    title: "Markdown",
-    href: "/markdown",
-    heading: "Components",
+    title: "JavaScript",
+    href: "/git",
+    heading: "JavaScript Knowledge",
     items: [
       {
         title: "Cards",
         href: "/cards",
       },
+    ],
+  },
+  {
+    title: "React",
+    href: "/prisma",
+    items: [
       {
-        title: "Diagrams",
-        href: "/diagrams",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    spacer: true,
+  },
+  {
+    title: "Git & GitHub",
+    href: "/git",
+    heading: "Tooling",
+    items: [
       {
-        title: "Filetree",
-        href: "/filetree",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    title: "Prisma",
+    href: "/prisma",
+    items: [
       {
-        title: "Lists",
-        href: "/lists",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    title: "TailwindCSS",
+    href: "/tailwind",
+    items: [
       {
-        title: "Maths",
-        href: "/maths",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    title: "Docker",
+    href: "/docker",
+    items: [
       {
-        title: "Notes",
-        href: "/notes",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    title: "Kubernetes",
+    href: "/kubernetes",
+    items: [
       {
-        title: "Steps",
-        href: "/steps",
+        title: "Cards",
+        href: "/cards",
       },
+    ],
+  },
+  {
+    title: "TypeScript",
+    href: "/typescript",
+    items: [
       {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
+        title: "Cards",
+        href: "/typescript",
       },
     ],
   },

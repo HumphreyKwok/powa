@@ -82,9 +82,13 @@ export async function getDocument(slug: string) {
       rawMdx = await response.text()
       lastUpdated = response.headers.get("Last-Modified") ?? null
     } else {
-      rawMdx = await fs.readFile(contentPath, "utf-8")
-      const stats = await fs.stat(contentPath)
-      lastUpdated = stats.mtime.toISOString()
+      try {
+        rawMdx = await fs.readFile(contentPath, "utf-8")
+        const stats = await fs.stat(contentPath)
+        lastUpdated = stats.mtime.toISOString()
+      } catch (error) {
+        console.log(error)
+      }
     }
 
     const parsedMdx = await parseMdx<BaseMdxFrontmatter>(rawMdx)
