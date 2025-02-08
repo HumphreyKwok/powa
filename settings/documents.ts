@@ -7,8 +7,8 @@ export const Documents: Paths[] = [
     heading: "Getting started",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
+        title: "Prerequisites",
+        href: "/prerequisites",
       },
       {
         title: "Setup",
