@@ -49,7 +49,7 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Part III: Building the Backend",
+    title: "Part III: Building Backend",
     href: "/course/part3",
     items: [
       {
@@ -59,7 +59,7 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Part IV: Consuming the Backend",
+    title: "Part IV: Consuming Backend",
     href: "/course/part4",
     items: [
       {
@@ -69,12 +69,12 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Part V: Building the Frontend",
+    title: "Part V: Building Frontend",
     href: "/course/part5",
     items: [
       {
         title: "The Old-fashioned React",
-        href: "the_old_fashioned-react",
+        href: "/the_old_fashioned-react",
       },
     ],
   },
