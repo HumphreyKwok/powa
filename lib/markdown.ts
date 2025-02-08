@@ -88,6 +88,7 @@ export async function getDocument(slug: string) {
         lastUpdated = stats.mtime.toISOString()
       } catch (error) {
         console.log(error)
+        return null
       }
     }
 

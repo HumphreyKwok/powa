@@ -1,5 +1,7 @@
 # The P.O.W.A. Project
 
+![Banner](/public/images/og-image.png "The POWA Project")
+
 An open-source modern fullstack development course.
 
 ## Contributing

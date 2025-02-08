@@ -15,8 +15,14 @@ type PageProps = {
 export default async function Pages({ params }: PageProps) {
   const { slug = [] } = await params
   const pathName = slug.join("/")
-  const res = await getDocument(pathName)
+  let res
 
+  try {
+    res = await getDocument(pathName)
+  } catch (error) {
+    console.log(error)
+    return notFound()
+  }
   if (!res) notFound()
 
   const { frontmatter, content, tocs } = res
@@ -50,6 +56,7 @@ export async function generateMetadata({ params }: PageProps) {
   try {
     res = await getDocument(pathName)
   } catch (error) {
+    console.log(error)
     return null
   }
 
