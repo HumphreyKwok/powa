@@ -39,86 +39,62 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    title: "Part II: Modifying Data",
-    href: "/filetrees",
+    title: "Part II: Manipulating Data",
+    href: "/course/part2",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "Communicating with Datasource",
+        href: "/communicating_with_datasource",
       },
     ],
   },
   {
-    title: "Part III: Creating APIs",
-    href: "/lists",
+    title: "Part III: Building the Backend",
+    href: "/course/part3",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "The Node Runtime",
+        href: "/the_node_runtime",
       },
     ],
   },
   {
-    title: "Part IV: Encapsulating APIs",
-    href: "/maths",
+    title: "Part IV: Consuming the Backend",
+    href: "/course/part4",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "Communicating With Backend",
+        href: "/communicating_with_backend",
       },
     ],
   },
   {
-    title: "Part V: Authenticating Users",
-    href: "/tabs",
+    title: "Part V: Building the Frontend",
+    href: "/course/part5",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "The Old-fashioned React",
+        href: "the_old_fashioned-react",
       },
     ],
   },
   {
     title: "Part VI: Testing",
-    href: "/placeholder",
+    href: "/course/part6",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "Testing your Endpoints",
+        href: "/testing",
       },
     ],
   },
   {
     title: "Part VII: Deployment",
-    href: "/placeholder2",
+    href: "/course/part7",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "Making it Alive",
+        href: "/making_it_alive",
       },
     ],
   },
@@ -127,22 +103,32 @@ export const Documents: Paths[] = [
   },
   {
     title: "JavaScript",
-    href: "/git",
-    heading: "JavaScript Knowledge",
+    href: "/programming/javascript",
+    heading: "Programming Knowledge",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "ES6 Syntax",
+        href: "/es6",
+      },
+    ],
+  },
+  {
+    title: "TypeScript",
+    href: "/programming/typescript",
+    items: [
+      {
+        title: "Types",
+        href: "/types",
       },
     ],
   },
   {
     title: "React",
-    href: "/prisma",
+    href: "/programming/react",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "React Hooks",
+        href: "/hooks",
       },
     ],
   },
@@ -151,62 +137,52 @@ export const Documents: Paths[] = [
   },
   {
     title: "Git & GitHub",
-    href: "/git",
+    href: "/tooling/git_github",
     heading: "Tooling",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "Version Control",
+        href: "/version_control",
       },
     ],
   },
   {
     title: "Prisma",
-    href: "/prisma",
+    href: "/tooling/prisma",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "What are Object-Relation-Mappers?",
+        href: "/orms",
       },
     ],
   },
   {
     title: "TailwindCSS",
-    href: "/tailwind",
+    href: "/tooling/tailwind",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "The Magic Behind TailwindCSS",
+        href: "/the_magic_behind_tailwind",
       },
     ],
   },
   {
     title: "Docker",
-    href: "/docker",
+    href: "/tooling/docker",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title: "Containerisation",
+        href: "/containerisation",
       },
     ],
   },
   {
     title: "Kubernetes",
-    href: "/kubernetes",
+    href: "/tooling/kubernetes",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
-      },
-    ],
-  },
-  {
-    title: "TypeScript",
-    href: "/typescript",
-    items: [
-      {
-        title: "Cards",
-        href: "/typescript",
+        title: "Kubernetes Engines",
+        href: "/kubernetes_engines",
       },
     ],
   },
