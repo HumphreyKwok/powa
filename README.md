@@ -19,9 +19,9 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Contact
 
-For support or inquiries, contact Humphrey Kwok [@hinzik] (contact@hinzik.dev) via email.
+For support or inquiries, contact Hinzik (contact@hinzik.dev) via email.
 
-## About the website template itself
+## About the website template
 
 Generated from [rubix-documents](https://github.com/rubixvi/rubix-documents)
 Rubix Studios - [https://www.rubixstudios.com.au](https://www.rubixstudios.com.au)

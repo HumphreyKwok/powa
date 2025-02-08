@@ -1,0 +1,55 @@
+---
+title: High-level Overview of Fullstack Development
+description: This article provides a high-level overview the what and how of modern fullstack development
+keywords:
+  [
+    "the powa project",
+    "javascript",
+    "fullstack development course",
+    "guide",
+    "nextjs",
+    "open-source",
+  ]
+---
+
+## What is a fullstack application?
+
+Before we move on to any technical details, I would like to explain the general idea of an &quot;fullstack&quot; application. In order to make the this article understandable for everyone, I will try to void using terminologies as much as I can.
+
+For most of the websites we visit today, we are utilising them as a tool to manage some sort of information. Those information are usually things we are interested, for exmaple the messages we send to each others on instant messaging sites, the response on generative-ai sites, the videos we watch on YouTube or TikTok. Although those information are being encoded in different formats, they can be pure text, soundwaves, photos, videos or even some format we will never notice. At the end of the day, they are all some piece of data, zeros and ones, stored on a machine.
+
+To store those information at a server and be able to access them at some remote location, we will need a tool. A tool that can help us manage and gather those information from a server, and represent those information on a device in our desirable way. The tool we are talking about, is the fullstack application we want to build in this course.
+
+Some of you may already noticed, **fullstack application might simply be a fancy way of how we refer to a piece of software, that stores and manages infomration on a computer for us.** Nothing more. There is not much difference, between a fullstack application, and some random calendar software you installed on your phone.
+
+If that&apos;s the case, why would we create a term to refer it as a **fullstack application**?
+
+One reason I could suggest is that **fullstack** is not actually referring to the application, but the skill sets, aka the &quot;tech stack&quot; of the one who developed the application. The application is developed by a &quot;fullstack&quot; developer, so we call it a &quot;fullstack&quot; application. I know it sound silly but the app itself is simply a software that stores and manages information for us.
+
+## Inside the "fullstack"
+
+If a fullstack application is developed by some who knows all skills inside the stack, what are those skills?
+
+This would be a controversial question, but my personal answer to the question would be there are only three components inside a fullstack application, and therefore there are only three set of skills inside the &quot;full-stack&quot;
+
+A fully functional fullstack application would consist by three components:
+
+1. A database system.
+2. A software that serves between the middle of the database and the graphical user interface.
+3. A graphical interface.
+
+![Banner](/images/introduction/overview/fullstackmodel.png "The POWA Project")
+
+It is a very simple model, but that&quot;s all three of the core components that make a fullstack application fully functional.
+
+A fullstack application handles request from the users and returns requested information back to the user. A typical user request starts from a browser event, such as clicking, typing or scrolling behaviours occurs inside the browser. The frontend javascripts detects and handles those user behaviours, then sends a request to the backend.
+
+The term &quot;backend&quot; is usually referring to a process that serves in the middle of the frontend back database, it listens for some particular types of incoming requests (e.g. HTTP GET or POST request). When a request comes in, the backend executes a series of pre-determined logics that involve operations like checking is there something missing in the request, is the user sending the request has enough permission, logging down the request as a record, and most importantly, it communicates with the datasource.
+
+Depending on the type of the incoming request, the backend may retreive some information from the datasource, write some data into the database, or simply rejects the request if the validation or authentication process fails. Finally, the backend returns a response to the frontend, either contains the requested data or shows it has been rejected, and await for the next request.
+
+## Becoming a fullstack developer
+
+I hope the above explanation gives you a little more insight about the what and how of fullstack applications. Fullstack developers are those who develop this kind of application, or in the context of this course, web-based applications. This article is intended to give you a very brief introduction to the fullstack development, so some of the process has been haevily simplifed.
+
+There are a few other articles inside this section which discuss about the curriculum of the course, the required setup, and some basic JavaScript that is required to enter this course. The remaining of the course would focus on the skill sets that is required to become a fullstack developer.

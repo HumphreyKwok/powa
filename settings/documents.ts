@@ -7,8 +7,16 @@ export const Documents: Paths[] = [
     heading: "Getting started",
     items: [
       {
+        title: "High-level Overview",
+        href: "/overview",
+      },
+      {
         title: "Prerequisites",
         href: "/prerequisites",
+      },
+      {
+        title: "Course Curriculum",
+        href: "/curriculum",
       },
       {
         title: "Setup",
@@ -21,16 +29,12 @@ export const Documents: Paths[] = [
   },
   {
     title: "Part I: Storing Data",
-    href: "/cards",
+    href: "/course/part1",
     heading: "Course Contents",
     items: [
       {
-        title: "Prerequisite",
-        href: "/installation",
-      },
-      {
-        title: "Setup",
-        href: "/setup",
+        title: "Creating Data Source",
+        href: "/datasource",
       },
     ],
   },
