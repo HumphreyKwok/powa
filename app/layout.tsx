@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { GoogleTagManager } from "@next/third-parties/google"
+import { Analytics } from "@vercel/analytics/react"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
 
@@ -65,6 +66,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <Analytics />
           </div>
         </ThemeProvider>
       </body>
